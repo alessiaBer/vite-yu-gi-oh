@@ -16,7 +16,7 @@ export default {
 <template>
   <div class="cardlist_container">
     <div class="found">
-      <span class="d-block p-3">Found .. cards</span>
+      <span class="d-block p-3">Found {{ store.cards.length }} cards</span>
     </div>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5">
       <CardItem 
