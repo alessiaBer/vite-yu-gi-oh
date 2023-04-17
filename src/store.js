@@ -9,6 +9,7 @@ export const store = reactive({
     axios.get(url)
     .then(response => {
       this.cards = response.data.data
+      this.loading = false
     })
   }
 })
