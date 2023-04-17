@@ -8,6 +8,9 @@ main {
         margin: 0 auto;
         .select_archetype {
             padding-bottom: 2rem;
+            .form-select {
+                width: fit-content;
+            }
         }
     }
 }
