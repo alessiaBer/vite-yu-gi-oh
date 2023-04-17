@@ -1,0 +1,11 @@
+@use './common' as *;
+
+.cardlist_container {
+    background-color: $light;
+    .found {
+        span {
+            background-color: $dark;
+            color: $light;
+        }
+    }
+}
