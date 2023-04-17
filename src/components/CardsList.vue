@@ -1,4 +1,5 @@
 <script>
+import { store } from '../store'
 import CardItem from './CardItem.vue'
 export default {
     name: 'CardsList',
@@ -13,7 +14,10 @@ export default {
       <span class="d-block p-3">Found .. cards</span>
     </div>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
-      <CardItem />
+      <CardItem 
+      v-for="card in store.cards"
+      :card="card"
+      />
     </div>
   </div>
   
