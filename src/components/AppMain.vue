@@ -1,16 +1,20 @@
 <script>
-import CardsList from './CardsList.vue';
+import MainSelect from "./MainSelect.vue";
+import CardsList from "./CardsList.vue";
 export default {
-    name: 'AppMain',
-    components: {
-        CardsList
-    }
+  name: "AppMain",
+  components: {
+    MainSelect,
+    CardsList,
+  },
 };
 </script>
 <template>
   <main>
-    <div class="select"></div>
-    <CardsList />
+    <div class="main_container">
+      <MainSelect />
+      <CardsList />
+    </div>
   </main>
 </template>
 

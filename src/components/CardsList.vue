@@ -10,7 +10,7 @@ export default {
 <template>
   <div class="cardlist_container">
     <div class="found">
-      <span>Found .. cards</span>
+      <span class="d-block p-3">Found .. cards</span>
     </div>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
       <CardItem />
