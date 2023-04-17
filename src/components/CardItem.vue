@@ -10,7 +10,7 @@ export default {
   <div class="col">
     <div class="my_card">
       <img
-        src="https://images.ygoprodeck.com/images/cards/34541863.jpg"
+        :src="card.card_images[0].image_url"
         :alt="card.name"
       />
       <div class="card_text text-center">
