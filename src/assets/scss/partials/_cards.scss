@@ -1,11 +1,32 @@
-@use './common' as *;
+@use "./common" as *;
 
 .cardlist_container {
-    background-color: $light;
-    .found {
-        span {
-            background-color: $dark;
-            color: $light;
-        }
+  background-color: $light;
+  padding: 2rem;
+  .found {
+    span {
+      background-color: $dark;
+      color: $light;
     }
+  }
+  .col {
+    padding-bottom: 1rem;
+    .my_card {
+      background-color: $primary;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        width: 100%;
+      }
+      .card_text {
+        background-color: $primary;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
 }
