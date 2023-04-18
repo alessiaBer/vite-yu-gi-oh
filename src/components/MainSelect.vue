@@ -36,7 +36,7 @@ export default {
     @change="$emit('makeSelection')"
     v-model="store.selectArch">
       <option disabled selected>-- Select archetype --</option>
-      <option value="">All</option>
+      <!-- <option value="">All</option> -->
       <option
       v-for="archetype in getArchetypes"
       :value="archetype">

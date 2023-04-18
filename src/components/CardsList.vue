@@ -8,6 +8,7 @@ export default {
     CardItem,
     LoaderComponent,
   },
+  emits: ['loadMoreCards'],
   data() {
     return {
       store,
@@ -17,12 +18,19 @@ export default {
 </script>
 <template>
   <div class="cardlist_container">
+    <div class="content" v-if="!store.loading">
     <div
       class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5"
-      v-if="!store.loading"
     >
       <CardItem v-for="card in store.cards" :card="card" />
     </div>
+    <button type="button" 
+    class="btn btn-dark text-center d-block mx-auto"
+    @click="$emit('loadMoreCards')"
+    v-if="store.selectArch === null">
+    Load More
+  </button>
+  </div>
     <LoaderComponent v-else />
   </div>
 </template>
