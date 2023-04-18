@@ -17,12 +17,12 @@ export default {
   },
   methods: {
     performSelection() {
-      const url = store.ARCH_API + store.selectArch
+      const url = store.YUGI_API + `?archetype={{store.selectArch}}`
       store.fetchCard(url) 
     }
   },
   mounted() {
-    store.fetchCard(store.YUGI_API)
+    store.fetchCard(store.YUGI_API + store.maxCardDisplay)
   }
 };
 </script>

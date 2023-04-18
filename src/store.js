@@ -3,8 +3,8 @@ import axios from 'axios'
 
 export const store = reactive({
   loading: true,
-  YUGI_API: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=30&offset=0',
-  ARCH_API: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=',
+  YUGI_API: 'https://db.ygoprodeck.com/api/v7/cardinfo.php',
+  maxCardDisplay: '?num=30&offset=0',
   selectArch: null,
   cards: null,
   fetchCard(url) {
