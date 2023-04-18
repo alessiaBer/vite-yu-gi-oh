@@ -1,12 +1,14 @@
 <script>
 import MainSelect from "./MainSelect.vue";
+import CounterComponent from "./CounterComponent.vue"
 import CardsList from "./CardsList.vue";
 import { store } from "../store";
 export default {
   name: "AppMain",
   components: {
     MainSelect,
-    CardsList,
+    CounterComponent,
+    CardsList
   },
   data() {
     return {
@@ -28,6 +30,7 @@ export default {
   <main>
     <div class="main_container">
       <MainSelect @makeSelection="performSelection(archetype)"/>
+      <CounterComponent :cards="store.cards" v-if="store.cards"/>
       <CardsList />
     </div>
   </main>
