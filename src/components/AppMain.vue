@@ -14,14 +14,9 @@ export default {
     }
   },
   methods: {
-    /**
-     * 
-     * @param {String} selection 
-     */
     performSelection() {
-      console.log('ciao')
-      /* const url = store.ARCH_API + selection
-      store.fetchCard(url) */
+      const url = store.ARCH_API + store.selectArch
+      store.fetchCard(url) 
     }
   },
   mounted() {
