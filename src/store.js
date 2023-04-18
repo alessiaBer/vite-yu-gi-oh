@@ -11,5 +11,8 @@ export const store = reactive({
       this.cards = response.data.data
       this.loading = false
     })
+    .catch(err => {
+      console.error(err.message)
+    })
   }
 })
