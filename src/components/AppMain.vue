@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     performSelection() {
-      const url = store.YUGI_API + `?archetype={{store.selectArch}}`
+      const url = store.YUGI_API + `?archetype=${store.selectArch}`
       store.fetchCard(url) 
     }
   },
